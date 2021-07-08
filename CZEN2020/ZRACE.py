@@ -1,0 +1,14 @@
+t=int(input())
+while(t):
+    r,g,b,w,o=map(int,input().split())
+    div1=100//r
+    div2=100//g
+    div3=100//b
+    div4=100//w
+    div5=100//o
+    mini=min(div1,div2,div3,div4,div5)
+    if(mini==div1):
+        print("Champions")
+    else:
+        print(-1)
+    t=t-1
